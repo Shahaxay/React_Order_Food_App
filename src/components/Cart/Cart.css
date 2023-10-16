@@ -1,0 +1,24 @@
+.cart-image{
+    width: 15px;
+}
+.cart__button{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    width: 9rem;
+    border: 1px solid rgba(26, 23, 23, 0.5);
+    background-color:rgba(26, 23, 23, 0.5);
+    padding:5px 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.cart__badge{
+    background-color: rgba(121, 43, 12, 0.733);
+    padding: 1px 5px;
+    border-radius: 40%;
+}
+
+.cart__button:hover{
+    background-color: rgba(26, 23, 23, 0.7);
+}
