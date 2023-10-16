@@ -1,0 +1,7 @@
+.meal-item{
+    display: flex;
+    justify-content: space-between;
+}
+.meal-item__price{
+    color: rgb(121, 43, 12);
+}

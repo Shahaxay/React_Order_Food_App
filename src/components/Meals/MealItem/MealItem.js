@@ -1,6 +1,7 @@
 import React from "react";
 
 import './MealItem.css'
+import MealForm from "./MealForm";
 
 const MealItem = props => {
     return (
@@ -12,15 +13,7 @@ const MealItem = props => {
                     <h3 className="meal-item__price">{` $ ${props.price.toFixed(2)}`}</h3>
                 </div>
                 <div>
-                    <form className="meal-item__form">
-                        <span>
-                            <label htmlFor="amount"><b>Amount</b> &nbsp;&nbsp;</label>
-                            <input id="amount" type="number" inputMode="numeric" className="meal-item__input" /><br />
-                        </span>
-                        <span>
-                        <button type="submit" className="meal-item__button">+ Add</button>
-                        </span>
-                    </form>
+                    <MealForm/>
                 </div>
             </div>
             <hr />
