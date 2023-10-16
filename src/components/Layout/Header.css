@@ -2,8 +2,10 @@
     display: flex;
     place-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
     padding: 0 4rem;
-    background-color: rgba(121, 43, 12, 0.733);
+    background-color: rgb(121, 43, 12);
     color:white;
 }
 img{

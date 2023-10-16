@@ -14,7 +14,7 @@
 }
 
 .cart__badge{
-    background-color: rgba(121, 43, 12, 0.733);
+    background-color: rgb(121, 43, 12);
     padding: 1px 5px;
     border-radius: 40%;
 }
