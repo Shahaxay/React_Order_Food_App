@@ -17,3 +17,14 @@
     width: 80%;
     padding: 5px 1rem 0;
 }
+
+.cartModel{
+    position: fixed;
+    background-color: white;
+    color: black;
+    width:60%;
+    top:30%;
+    left:20%;
+    padding:5px 10px;
+    z-index: 100;
+}
