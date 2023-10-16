@@ -3,8 +3,8 @@ import ReactDom from 'react-dom';
 import './Model.css';
 import Card from "./Card";
 
-const BackDrop = () => {
-    return <div className="back-drop"></div>
+const BackDrop = props => {
+    return <div className="back-drop" onClick={props.onClick}></div>
 }
 
 const ModelOverlay = props => {
@@ -17,7 +17,7 @@ const ModelOverlay = props => {
 
 const Model = props => {
     return <React.Fragment>
-        {ReactDom.createPortal(<BackDrop />, document.getElementById('overlays'))}
+        {ReactDom.createPortal(<BackDrop onClick={props.onClick}/>, document.getElementById('overlays'))}
         {ReactDom.createPortal(<ModelOverlay>{props.children}</ModelOverlay>, document.getElementById('overlays'))}
     </React.Fragment>;
 };

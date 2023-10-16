@@ -29,11 +29,8 @@ ul {
     color:rgb(121, 43, 12);
 }
 
-#order:hover{
+#order:hover,#close:hover{
     background-color:rgb(61, 21, 4);
     color: white;
 }
-#close:hover{
-    border-color: black;
-    color: black;
-}
+
