@@ -1,3 +1,33 @@
-.mean-item__price{
+.meal-item{
+    display: flex;
+    justify-content: space-between;
+}
+.meal-item__price{
     color: rgb(121, 43, 12);
+}
+.meal-item__form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+.meal-item__button{
+    background-color: rgb(121, 43, 12);
+    border: rgb(121, 43, 12);
+    color:white;
+    padding: 5px .5rem;
+    width: 80%;
+    border-radius: 12px;
+    font-weight: bold;
+    float:right;
+
+}
+.meal-item__button:hover{
+    background-color: rgb(65, 21, 4);
+}
+.meal-item__input{
+    width: 2.5rem;
+    margin-bottom: 5px;
+    border:1px solid grey;
+    border-radius: 5px;
 }
