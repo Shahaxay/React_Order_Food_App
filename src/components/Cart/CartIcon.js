@@ -5,12 +5,11 @@ import CartContext from '../store/cart-context';
 const CartIcon = props => {
     const context = useContext(CartContext);
     console.log(context.items);
-    const cartItemQuantity = Object.values(context.items).reduce(
-        (sum, amt) => {
-            console.log(amt);
-            sum += +amt;
-            return sum
-        }, 0);
+    let cartItemQuantity = 0;
+    Object.values(context.items).forEach(
+        item => {
+            cartItemQuantity+=+item[0];
+        });
     return (
         <React.Fragment>
             {console.log("evaluated cartIcon")}

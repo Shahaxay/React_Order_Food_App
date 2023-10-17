@@ -7,14 +7,22 @@ const CartContextProvider = props => {
         //empty? add:check
         const prevItems={...cartItems};
         if (prevItems[item.title]) {
-            prevItems[item.title] += +item.amount;
+            prevItems[item.title][0] += +item.amount;
         } else {
-            prevItems[item.title] = +item.amount;
+            prevItems[item.title] = [+item.amount,+item.price];
         }
         setCartItems(prevItems);
     }
     const removeItemHandler = id => {
-
+        const prevItem={...cartItems};
+        console.log(id);
+        console.log(prevItem[id][0]);
+        if(prevItem[id][0]>1){
+            prevItem[id][0]--;
+        }else{
+            delete prevItem[id];
+        }
+        setCartItems(prevItem);
     }
     const contextObj = {
         items: cartItems, 
