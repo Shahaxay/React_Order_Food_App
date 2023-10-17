@@ -1,13 +1,15 @@
-import React from "react";
+import React,{useContext} from "react";
 
 import './Cart.css';
 import Model from "../UI/Model";
+import CartContext from "../store/cart-context";
 
 const Cart=props=>{
+    const context=useContext(CartContext);
     return (
         <Model onClick={props.onClose}>
             <ul>
-                <li>Sushi</li>
+                {Object.keys(context.items).map(item=><li>{item}</li>)}
             </ul>
             <div className="cart-summary">
                 <h3>Total Amount</h3>

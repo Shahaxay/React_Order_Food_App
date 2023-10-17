@@ -11,12 +11,12 @@ const Header = props => {
     const displayCartHandler = () => {
         setDisplayCart(true);
     }
-    const hideCartHandler=()=>{
+    const hideCartHandler = () => {
         setDisplayCart(false);
     }
     return (
         <React.Fragment>
-            {dispayCart && <Cart onClose={hideCartHandler}/>}
+            {dispayCart && <Cart onClose={hideCartHandler} />}
             <header className='header'>
                 <h2>ReactMeals</h2>
                 <CartIcon onClick={displayCartHandler} />

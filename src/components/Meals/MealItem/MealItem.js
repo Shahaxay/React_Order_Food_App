@@ -13,7 +13,7 @@ const MealItem = props => {
                     <h3 className="meal-item__price">{` $ ${props.price.toFixed(2)}`}</h3>
                 </div>
                 <div>
-                    <MealForm/>
+                    <MealForm title={props.name}/>
                 </div>
             </div>
             <hr />

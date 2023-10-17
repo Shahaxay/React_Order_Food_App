@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
+import CartContextProvider from "./components/store/CartContextProvider";
 function App() {
   return (
-    <React.Fragment>
-      <Header/>
-      <Meals/>
-    </React.Fragment>
+    <CartContextProvider>
+        <Header />
+        <Meals />
+    </CartContextProvider>
   );
 }
 
